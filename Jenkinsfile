@@ -21,7 +21,7 @@ pipeline {
         AWS_REGION = 'us-east-2'
         ECR_REPOSITORY_NAME = '390253046172.dkr.ecr.us-east-2.amazonaws.com/nodejsapp'
         DOCKER_IMAGE_NAME = "sangram"
-        DOCKERFILE_PATH = "java-maven-sonar-argocd-helm-k8s/spring-boot-app" // e.g., "java-maven-sonar-argocd-helm-k8s/spring-boot-app/Dockerfile"
+        DOCKERFILE_PATH = "." // e.g., "java-maven-sonar-argocd-helm-k8s/spring-boot-app/Dockerfile"
       }
       steps {
         script {
