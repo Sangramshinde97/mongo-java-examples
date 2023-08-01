@@ -3,7 +3,7 @@
 FROM adoptopenjdk/openjdk11:alpine-jre
 
 # Simply the artifact path
-ARG artifact=target/spring-boot-web.jar
+ARG artifact=target/mongo-java-examples-1.0-SNAPSHOT.jar
 
 WORKDIR /opt/app
 
