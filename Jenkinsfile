@@ -12,7 +12,7 @@ pipeline {
       steps {
         sh 'echo passed'
         //git branch: 'main', url: 'https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero.git'
-        sh 'cd java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
+        sh 'cd src/main/java/org/mongodb/connect/tls && mvn clean package'
       }
     }
     stage('Build and Push Docker Image') {
