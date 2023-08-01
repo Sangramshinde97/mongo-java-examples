@@ -5,7 +5,7 @@ pipeline {
     stage('Checkout and Build') {
       agent {
         docker {
-          image 'abhishekf5/maven-abhishek-docker-agent:v1'
+          image 'sangrambhau/sangram-repo:latest'
           args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
         }
       }
